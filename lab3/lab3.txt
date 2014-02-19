@@ -1,0 +1,22 @@
+Aaron Sedlacek Lab 3 links:
+02/18/2014
+
+Individually:
+	git repository was shared with Prof. Plotka
+	private git repository for ITWS 4200: https://github.com/Aarons100/ITWS4200
+
+Group:
+	git repository was shared with Prof. Plotka
+	private git repository for uPost: https://github.com/Aarons100/uPost
+
+	url for uPost: uPost.aaronsedlacek.myrpi.org
+
+		administrative username: sedlaa
+		administrative password: tRb-tDm-fUf-wD5
+
+	Bug Tracking for uPost: 
+
+	We’re using debungle.com for online bug tracking,
+	the bug tracking page was shared with Prof. Plotka
+
+	URL: https://www.debugle.com/projects/9145

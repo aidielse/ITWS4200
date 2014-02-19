@@ -1,0 +1,36 @@
+@keyframes myfade
+{
+from {background: white;}
+to {background: black;}
+}
+
+@-webkit-keyframes myfade /* Safari and Chrome */
+{
+from {background: white;}
+to {background: black;}
+}
+
+html {
+	font-family: Helvetica;
+	color: white;
+	background-color: black;
+	animation: myfade 5s;
+	-webkit-animation: myfade 5s; /* Safari and Chrome */
+}
+
+#working {
+	font-size: 30px;
+}
+#container {
+	width: 400px;
+	height: 400px;
+	border: 3px solid white;
+	border-radius: 200px;
+	text-align: center;
+
+}
+
+#temperature {
+	font-size: 40px;
+	text-align: center;
+}	

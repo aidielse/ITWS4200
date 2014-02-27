@@ -1,19 +1,14 @@
 html {
 	font-family: helvetica;
 }
-.tweet {
+.game {
 	text-align: left;
 	color: white;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	position: relative;
 }
-.prof_pic {
+.game_pic {
 	float:left;
-}
-.username {
-	text-align: right;
-	position: absolute;
-	bottom: 0;
 }
 
 .footer {
@@ -24,20 +19,17 @@ html {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-	.tweet {
+	.game {
 		border: 1px solid white;
 		min-height: 40px;
 		background-image: url(./blue_header_small.jpg);
 	}
-	.prof_pic {
+	.game_pic {
 		width: 40px;
 		height: 40px;
 	}
-	.username {
-		left: 40px;	
-	}
 	.ui-page {
-		background: url(./bg-waves-small.png);
+		background: url(./1436662-small.jpg);
 	}
 	html {
 		font-size: 8px;
@@ -45,20 +37,17 @@ html {
 }
 
 @media screen and (min-width: 481px) and (max-width: 960px) {
-	.tweet {
+	.game {
 		border: 2px solid white;
 		min-height: 60px;
 		background-image: url(./blue_header_med.jpg);
 	}
-	.prof_pic {
+	.game_pic {
 		width: 60px;
 		height: 60px;
 	}
-	.username {
-		left: 60px;	
-	}
 	.ui-page {
-		background: url(./bg-waves-med.png);
+		background: url(./1436662-med.jpg);
 	}
 	html {
 		font-size: 15px;
@@ -66,20 +55,17 @@ html {
 }
 
 @media screen and (min-width: 961px) {
-	.tweet {
+	.game {
 		border: 3px solid white;
 		min-height: 80px;
 		background-image: url(./blue_header.jpg);
 	}
-	.prof_pic {
+	.game_pic {
 		width: 80px;
 		height: 80px;
 	}
-	.username {
-		left: 80px;	
-	}
 	.ui-page {
-		background: url(./bg-waves.png);
+		background: url(./1436662.jpg);
 	}
 	html {
 		font-size: 20px;

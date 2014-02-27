@@ -40,6 +40,6 @@ $(document).ready(function() {
       num_tweets++;
     }
     //call updateTweets() every 3 seconds
-    setInterval(updateTweets,3000);			
+  
   })
 });

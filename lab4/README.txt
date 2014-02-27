@@ -3,6 +3,8 @@ Twitch Ticker - By Aaron Sedlacek
 
 This webapp pulls it's data from the Twitch API, parses it, and displays it accordingly on the main screen.
 
+The webapp updates the information that is on the screen every 5 seconds.
+
 The point of this web application is:
 
 	1. to show the top 5 most watched video games being streamed on twitch

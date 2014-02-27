@@ -1,32 +1,87 @@
+html {
+	font-family: helvetica;
+}
 .tweet {
-	border: 3px solid white;
 	text-align: left;
-	min-height: 60px;
 	color: white;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	background-image: url(./blue_header.jpg);
 	position: relative;
 }
 .prof_pic {
-	float: left;
-	width: 60px;
-	height: 60px;
+	float:left;
 }
 .username {
 	text-align: right;
 	position: absolute;
 	bottom: 0;
-	left: 60px;
-	
 }
-#footimg {
-	height: 15%;
-	width: 10%;
-	position: fixed;
-	bottom: 0px;
-	left: 45%;
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
 }
-html {
-	background: url(./bg-waves.png);
-	font-family: helvetica;
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	.tweet {
+		border: 1px solid white;
+		min-height: 40px;
+		background-image: url(./blue_header_small.jpg);
+	}
+	.prof_pic {
+		width: 40px;
+		height: 40px;
+	}
+	.username {
+		left: 40px;	
+	}
+	.ui-page {
+		background: url(./bg-waves-small.png);
+	}
+	html {
+		font-size: 8px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 960px) {
+	.tweet {
+		border: 2px solid white;
+		min-height: 60px;
+		background-image: url(./blue_header_med.jpg);
+	}
+	.prof_pic {
+		width: 60px;
+		height: 60px;
+	}
+	.username {
+		left: 60px;	
+	}
+	.ui-page {
+		background: url(./bg-waves-med.png);
+	}
+	html {
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 961px) {
+	.tweet {
+		border: 3px solid white;
+		min-height: 80px;
+		background-image: url(./blue_header.jpg);
+	}
+	.prof_pic {
+		width: 80px;
+		height: 80px;
+	}
+	.username {
+		left: 80px;	
+	}
+	.ui-page {
+		background: url(./bg-waves.png);
+	}
+	html {
+		font-size: 20px;
+	}
 }

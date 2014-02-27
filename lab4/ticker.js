@@ -3,6 +3,7 @@
 //once the document is loaded
 $(document).ready(function() {
   //get the JSON data from tweets.json and store it in the data variable
+  
  	$.getJSON("tweets.json", function(data) {
 
   	/*alert("tweets.json has been loaded");
@@ -33,7 +34,7 @@ $(document).ready(function() {
       //adds the username, closes the divs and adds a <br>
       temp += "<div class='username'>--" + data[i].user.screen_name + "</div></div><br>";
       //we then prepend the tweet to the main page
-      $("body").prepend(temp);
+      $("#content").prepend(temp);
       //$(".tweet").fadeIn("fast");
       //increment i and num_tweets
       i++; 
@@ -42,4 +43,4 @@ $(document).ready(function() {
     //call updateTweets() every 3 seconds
     setInterval(updateTweets,3000);			
   })
-});
+})

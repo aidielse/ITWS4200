@@ -2,16 +2,31 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<!--the javascript file will handle literally everything and is run immediately after the page is done loading -->
-		<title> Aaron Sedlacek's Tweet Ticker </title>
-		<!-- links to scripts and styling -->
+		<title>Tweet Ticker</title>
+		<!-- Jquery/Jquery mobile links -->
+		<link rel="stylesheet" href="./jquery.mobile-1.4.1.min.css">
 		<script type="text/javascript" src="./jquery.min.js"></script>
+		<script type="text/javascript" src="./jquery.mobile-1.4.1.min.js"></script>
+
+		<!--links to my scripts and styling -->
 		<script type="text/javascript" src="./ticker.js"></script>
-		<link rel=stylesheet href="style.css">
+		<link rel="stylesheet" href="./style.css">
 
 	</head>
 	<body>
-		<!-- image for footer, no particular reason I put the image there, I just liked it -->
-		<img id='footimg' src="./diamond.gif"/>
+		<div data-role="page">
+
+		  	<div data-role="header">
+		    	<h1>Mobile Tweet Ticker</h1>
+		  	</div>
+
+		  	<div data-role="main" id="content">
+		    </div>
+
+		  	<div data-role="footer" class="footer">
+		    	<p>Web Application by Aaron Sedlacek</p>
+		    </div>
+
+		</div>
 	</body>
 </html>

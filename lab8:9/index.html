@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- if the cookie is not set, the user cannot view the main menu 
+		and is instead redirected to temp.html -->
+		<script type="text/javascript">
+			if(!document.cookie) {
+				window.location = "./temp.html";
+			}
+		</script>
+		<meta charset="utf-8">
+		<title> Tweet Ticker Menu </title>
+		<script type="text/javascript" src="./jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="./Chart.js-master/Chart.js"></script>
+
+		<script type="text/javascript" src="./json2csv.js"></script>
+
+		<style type="text/css">
+
+			html {
+				background-color: #CCCCCC;
+				font-family: helvetica;
+			}
+			h1 {
+				text-align: center;
+				padding-top: -2px;
+			}
+			#border {
+
+				border: 1px solid black;
+				width: 30%;
+				height: 30%;
+				margin-left: 35%;
+				margin-right: 35%;
+				text-align: center;
+				padding-bottom: 5%;
+				border-radius: 5%;
+			}
+			#getTweets {
+				width: 30%;
+				height: 45%;
+				margin-left: 0%;
+				margin-right: auto;
+			}
+			#convert {
+				width: 30%;
+				height: 0%;
+				margin-left: 0%;
+				margin-right: auto;
+			}
+			.tweet {
+				padding-top: 2px;
+				border: 3px solid white;
+				text-align: left;
+				min-height: 60px;
+				color: white;
+				text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+				background-color: #AAA;
+				position: relative;
+			}
+			.prof_pic {
+				float: left;
+				width: 60px;
+				height: 60px;
+			}
+			.username {
+				text-align: right;
+				position: absolute;
+				bottom: 0;
+				left: 60px;		
+			}
+			#color1 {
+				background-color: #F38630;
+				height: 20px;
+				text-align: center;
+			}
+
+			#color2 {
+				background-color: #E0E4CC;
+				height: 20px;
+				text-align: center;
+			}
+
+			#first_chart_description {
+				border: 1px solid black;
+				width: 400px;
+			}
+			#lang_chart_description {
+				border: 1px solid black;
+			}
+			#hashtag_chart {
+				margin-left: 435px;
+				width: 410px;
+			}
+
+			#lang_chart_area {
+				margin-top: -446px;
+				width: 410px;
+			}
+
+			#lang_color1 {
+				background-color: #F7464A;
+				height: 20px;
+				text-align: center;
+			}
+			#lang_color2 {
+				background-color: #E2EAE9;
+				height: 20px;
+				text-align: center;
+			}
+			#lang_color3 {
+				background-color: #D4CCC5;
+				height: 20px;
+				text-align: center;
+			}
+			#lang_color4 {
+				background-color: #949FB1;
+				height: 20px;
+				text-align: center;
+			}
+			#lang_color5 {
+				background-color: #4D5360;
+				height: 20px;
+				text-align: center;
+			}
+			#lang_color6 {
+				background-color: #E0E4CC;
+				height: 20px;
+				text-align: center;
+			}
+			#lang_color7 {
+				background-color: #F38630;
+				height: 20px;
+				text-align: center;
+			}
+
+			#source_chart_area {
+				margin-left: 840px;
+				margin-top: -506px;
+				width: 410px;
+			}
+
+			#source_chart_description {
+				border: 1px solid black;
+			}
+
+			#source_color1 {
+				background-color: #F7464A;
+				height: 20px;
+				text-align: center;
+			}
+			#source_color2 {
+				background-color: #E2EAE9;
+				height: 20px;
+				text-align: center;
+			}
+			#source_color3 {
+				background-color: #D4CCC5;
+				height: 20px;
+				text-align: center;
+			}
+			#source_color4 {
+				background-color: #949FB1;
+				height: 20px;
+				text-align: center;
+			}
+			#source_color5 {
+				background-color: #F38630;
+				height: 20px;
+				text-align: center;
+			}
+
+		</style>
+	</head> 
+	<body>
+		<h1>Tweet Ticker Menu</h1>
+		<div id="border">
+			<p id ="description">Note: See the console for additional information on what the server is doing. The graphs are updated every 15 seconds.</p>
+			<form method="GET" action="/getTweets">
+				<input id ="getTweets" type="submit" value="Get Tweets!">
+			</form>			
+			<button id="convert">Convert to CSV</button>
+			<form method="GET" action="/buildTweetDatabase">
+				<input id="buildTweetDatabase" type="submit" value="Build Tweet Database">
+			</form>
+			<button id="readTweets">Read Tweets</button>
+		</div>
+		<div id="hashtag_chart">
+			<canvas id="first_chart" width="400" height="400"></canvas>
+			<div id="first_chart_description">
+				<div>
+					<div id='color1'>Tweets With a Hashtag in Them</div>
+				</div>
+				<div>
+					<div id='color2'>Tweets Without a Hashtag in Them</div>
+				</div>
+			</div>
+		</div>
+		<div id="lang_chart_area">
+			<canvas id="lang_chart" width="400" height="400"></canvas>
+			<div id="lang_chart_description">
+				<div id="lang_color1"></div>
+				<div id="lang_color2"></div>
+				<div id="lang_color3"></div>
+				<div id="lang_color4"></div>
+				<div id="lang_color5"></div>
+				<div id="lang_color6"></div>
+				<div id="lang_color7"></div>
+			</div>
+		</div>
+		<div id="source_chart_area">
+			<canvas id="source_chart" width="400" height="400"></canvas>
+			<div id="source_chart_description">
+				<div id="source_color1"></div>
+				<div id="source_color2"></div>
+				<div id="source_color3"></div>
+				<div id="source_color4"></div>
+				<div id="source_color5"></div>
+			</div>
+		</div>
+	</body>
+</html>

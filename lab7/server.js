@@ -92,8 +92,8 @@
 		console.log("Getting Tweets...");
 		//twitter access keys n' such
 		var twit = new twitter({
-		  consumer_key: 'GeSYIowhwevxrLyxQCVOg',
-		  consumer_secret: 'Zw4tSgLyOYZ9DifBOqqs4VTtGg0Xa1yHiDDyqSkuo',
+		  consumer_key: 'vTXtCWxwdVxMPD7mKxJMgqTUv',
+		  consumer_secret: 'GMRMHMdVE4xBSRd7R6dX93VU7dYJF0zHAT49gXrBcyxuzgBjPy',
 		  access_token_key: '2363419033-zOZwhNcZXgMHQvgL3v0wpoLuh2rF13ukhiT7BUR',
 		  access_token_secret: 'vHolLD2gmWsBNNIX7JAcHDUfF7USiNsNN5i99pIeMjtFv'
 		});
@@ -142,8 +142,8 @@
 		//console.log("Getting Tweets...");
 		//twitter access keys n' such
 		var twit = new twitter({
-		  consumer_key: 'GeSYIowhwevxrLyxQCVOg',
-		  consumer_secret: 'Zw4tSgLyOYZ9DifBOqqs4VTtGg0Xa1yHiDDyqSkuo',
+		  consumer_key: 'vTXtCWxwdVxMPD7mKxJMgqTUv',
+		  consumer_secret: 'GMRMHMdVE4xBSRd7R6dX93VU7dYJF0zHAT49gXrBcyxuzgBjPy',
 		  access_token_key: '2363419033-zOZwhNcZXgMHQvgL3v0wpoLuh2rF13ukhiT7BUR',
 		  access_token_secret: 'vHolLD2gmWsBNNIX7JAcHDUfF7USiNsNN5i99pIeMjtFv'
 		});

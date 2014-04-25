@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- this script sets a logged in cookie for the user,
+			basically forcing them to see this page every time they reset their cookies -->
+		
+		<script type="text/javascript">
+			document.cookie = "isloggedin=1";
+		</script>
+		<meta charset="utf-8">
+		<title>Aaron's Tweet Ticker</title>
+
+				<style type="text/css">
+
+			html {
+				background-color: #CCCCCC;
+				font-family: helvetica;
+			}
+			h1 {
+				text-align: center;
+				padding-top: -2px;
+			}
+			#border {
+
+				border: 1px solid black;
+				width: 30%;
+				height: 30%;
+				margin-left: 35%;
+				margin-right: 35%;
+				text-align: center;
+				padding-bottom: 5%;
+				border-radius: 5%;
+			}
+			#start_button {
+				width: 10%;
+				margin-left: 45%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="Welcome"> Welcome to my Tweet Ticker!</h1>
+		<p id="border">This web application gets a thousand tweets from twitter and saves them to either a .json file or in a database. From there you can either convert the .json file into a .csv for software like Microsoft Excel or you can read the tweets live from the database. If you read the tweets from the database, they'll be loaded onto the screen for you to read!</p>
+		<form method="GET" action="/start">
+			<input id="start_button" type="submit" value="Let's Get Started!">
+		</form>	
+	</body>
+</html>

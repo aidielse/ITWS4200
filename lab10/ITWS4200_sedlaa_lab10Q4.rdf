@@ -1,0 +1,58 @@
+<rdf:RDF xmlns:res="http://www.w3.org/2005/sparql-results#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:nodeID="rset">
+<rdf:type rdf:resource="http://www.w3.org/2005/sparql-results#ResultSet" />
+    <res:resultVariable>city</res:resultVariable>
+    <res:resultVariable>areaTotal</res:resultVariable>
+    <res:resultVariable>postalCode</res:resultVariable>
+    <res:solution rdf:nodeID="r0">
+      <res:binding rdf:nodeID="r0c0"><res:variable>city</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Midland,_Texas"/></res:binding>
+      <res:binding rdf:nodeID="r0c1"><res:variable>areaTotal</res:variable><res:value datatype="http://www.w3.org/2001/XMLSchema#double">1.85184e+08</res:value></res:binding>
+      <res:binding rdf:nodeID="r0c2"><res:variable>postalCode</res:variable><res:value xml:lang="en">79701-12</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r1">
+      <res:binding rdf:nodeID="r1c0"><res:variable>city</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Wichita_Falls,_Texas"/></res:binding>
+      <res:binding rdf:nodeID="r1c1"><res:variable>areaTotal</res:variable><res:value datatype="http://www.w3.org/2001/XMLSchema#double">1.81558e+08</res:value></res:binding>
+      <res:binding rdf:nodeID="r1c2"><res:variable>postalCode</res:variable><res:value xml:lang="en">76301-11</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r2">
+      <res:binding rdf:nodeID="r2c0"><res:variable>city</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Irving,_Texas"/></res:binding>
+      <res:binding rdf:nodeID="r2c1"><res:variable>areaTotal</res:variable><res:value datatype="http://www.w3.org/2001/XMLSchema#double">1.753e+08</res:value></res:binding>
+      <res:binding rdf:nodeID="r2c2"><res:variable>postalCode</res:variable><res:value xml:lang="en">75000-75099</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r3">
+      <res:binding rdf:nodeID="r3c0"><res:variable>city</res:variable><res:value rdf:resource="http://dbpedia.org/resource/McKinney,_Texas"/></res:binding>
+      <res:binding rdf:nodeID="r3c1"><res:variable>areaTotal</res:variable><res:value datatype="http://www.w3.org/2001/XMLSchema#double">1.515e+08</res:value></res:binding>
+      <res:binding rdf:nodeID="r3c2"><res:variable>postalCode</res:variable><res:value xml:lang="en">75069-75071</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r4">
+      <res:binding rdf:nodeID="r4c0"><res:variable>city</res:variable><res:value rdf:resource="http://dbpedia.org/resource/San_Angelo,_Texas"/></res:binding>
+      <res:binding rdf:nodeID="r4c1"><res:variable>areaTotal</res:variable><res:value datatype="http://www.w3.org/2001/XMLSchema#double">1.50737e+08</res:value></res:binding>
+      <res:binding rdf:nodeID="r4c2"><res:variable>postalCode</res:variable><res:value xml:lang="en">76901-09</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r5">
+      <res:binding rdf:nodeID="r5c0"><res:variable>city</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Garland,_Texas"/></res:binding>
+      <res:binding rdf:nodeID="r5c1"><res:variable>areaTotal</res:variable><res:value datatype="http://www.w3.org/2001/XMLSchema#double">1.47888e+08</res:value></res:binding>
+      <res:binding rdf:nodeID="r5c2"><res:variable>postalCode</res:variable><res:value xml:lang="en">75040-75049</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r6">
+      <res:binding rdf:nodeID="r6c0"><res:variable>city</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Longview,_Texas"/></res:binding>
+      <res:binding rdf:nodeID="r6c1"><res:variable>areaTotal</res:variable><res:value datatype="http://www.w3.org/2001/XMLSchema#double">1.418e+08</res:value></res:binding>
+      <res:binding rdf:nodeID="r6c2"><res:variable>postalCode</res:variable><res:value xml:lang="en">75601–75606</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r7">
+      <res:binding rdf:nodeID="r7c0"><res:variable>city</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Tyler,_Texas"/></res:binding>
+      <res:binding rdf:nodeID="r7c1"><res:variable>areaTotal</res:variable><res:value datatype="http://www.w3.org/2001/XMLSchema#double">1.40833e+08</res:value></res:binding>
+      <res:binding rdf:nodeID="r7c2"><res:variable>postalCode</res:variable><res:value xml:lang="en">75700-75799</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r8">
+      <res:binding rdf:nodeID="r8c0"><res:variable>city</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Conroe,_Texas"/></res:binding>
+      <res:binding rdf:nodeID="r8c1"><res:variable>areaTotal</res:variable><res:value datatype="http://www.w3.org/2001/XMLSchema#double">1.364e+08</res:value></res:binding>
+      <res:binding rdf:nodeID="r8c2"><res:variable>postalCode</res:variable><res:value xml:lang="en">77300-77399</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r9">
+      <res:binding rdf:nodeID="r9c0"><res:variable>city</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Aransas_Pass,_Texas"/></res:binding>
+      <res:binding rdf:nodeID="r9c1"><res:variable>areaTotal</res:variable><res:value datatype="http://www.w3.org/2001/XMLSchema#double">1.34161e+08</res:value></res:binding>
+      <res:binding rdf:nodeID="r9c2"><res:variable>postalCode</res:variable><res:value xml:lang="en">78335-78336</res:value></res:binding>
+    </res:solution>
+  </rdf:Description>
+</rdf:RDF>

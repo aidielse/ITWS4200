@@ -1,0 +1,30 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:primaryTopic rdf:resource="#me"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+<foaf:name>Aaron Sedlacek</foaf:name>
+<foaf:title>Mr</foaf:title>
+<foaf:givenname>Aaron</foaf:givenname>
+<foaf:family_name>Sedlacek</foaf:family_name>
+<foaf:nick>A A Ron</foaf:nick>
+<foaf:mbox rdf:resource="mailto:aarons104@gmail.com"/>
+<foaf:homepage rdf:resource="http://aaronsedlacek.myrpi.org"/>
+<foaf:phone rdf:resource="tel:5166800421"/>
+<foaf:schoolHomepage rdf:resource="http://rpi.edu/"/>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Joshua Kevin Goldberg</foaf:name>
+<foaf:mbox rdf:resource="mailto:josh.goldberg.819@gmail.com"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Evan MacGregor</foaf:name>
+<foaf:mbox rdf:resource="mailto:macgre@rpi.edu"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Richard Plotka</foaf:name>
+<foaf:mbox rdf:resource="mailto:rplotka@gmail.com"/></foaf:Person></foaf:knows></foaf:Person>
+</rdf:RDF>

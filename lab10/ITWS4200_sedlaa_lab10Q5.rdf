@@ -1,0 +1,28 @@
+<rdf:RDF xmlns:res="http://www.w3.org/2005/sparql-results#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:nodeID="rset">
+<rdf:type rdf:resource="http://www.w3.org/2005/sparql-results#ResultSet" />
+    <res:resultVariable>city</res:resultVariable>
+    <res:resultVariable>areaTotal</res:resultVariable>
+    <res:resultVariable>postalCode</res:resultVariable>
+    <res:solution rdf:nodeID="r0">
+      <res:binding rdf:nodeID="r0c0"><res:variable>city</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Corpus_Christi,_Texas"/></res:binding>
+      <res:binding rdf:nodeID="r0c1"><res:variable>areaTotal</res:variable><res:value datatype="http://www.w3.org/2001/XMLSchema#double">1.19191e+09</res:value></res:binding>
+      <res:binding rdf:nodeID="r0c2"><res:variable>postalCode</res:variable><res:value xml:lang="en">78401, 78402, 78404, 78405, 78406, 78407, 78408, 78409, 78410, 78411, 78412, 78413, 78414, 78415, 78416, 78417, 78418</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r1">
+      <res:binding rdf:nodeID="r1c0"><res:variable>city</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Fort_Worth,_Texas"/></res:binding>
+      <res:binding rdf:nodeID="r1c1"><res:variable>areaTotal</res:variable><res:value datatype="http://www.w3.org/2001/XMLSchema#double">9.044e+08</res:value></res:binding>
+      <res:binding rdf:nodeID="r1c2"><res:variable>postalCode</res:variable><res:value xml:lang="en">76101-76124, 76126-76127, 76129-76137, 76140, 76147-76148, 76150, 76155, 76161-76164, 76166, 76177, 76179, 76180-76182, 76185, 76191-76193, 76195-76199, 76244</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r2">
+      <res:binding rdf:nodeID="r2c0"><res:variable>city</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Brownsville,_Texas"/></res:binding>
+      <res:binding rdf:nodeID="r2c1"><res:variable>areaTotal</res:variable><res:value datatype="http://www.w3.org/2001/XMLSchema#double">3.82e+08</res:value></res:binding>
+      <res:binding rdf:nodeID="r2c2"><res:variable>postalCode</res:variable><res:value xml:lang="en">78520, 78521, 78522, 78523, 78526</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r3">
+      <res:binding rdf:nodeID="r3c0"><res:variable>city</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Port_Arthur,_Texas"/></res:binding>
+      <res:binding rdf:nodeID="r3c1"><res:variable>areaTotal</res:variable><res:value datatype="http://www.w3.org/2001/XMLSchema#double">3.723e+08</res:value></res:binding>
+      <res:binding rdf:nodeID="r3c2"><res:variable>postalCode</res:variable><res:value xml:lang="en">77640-77643</res:value></res:binding>
+    </res:solution>
+  </rdf:Description>
+</rdf:RDF>

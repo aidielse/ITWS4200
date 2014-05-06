@@ -1,0 +1,60 @@
+Queries
+
+QUERY 1:
+
+	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+	PREFIX ontology: <http://dbpedia.org/ontology/> 
+	select distinct ?filmUri  
+	where { ?filmUri  rdf:type ontology:Film . }
+
+QUERY 2:
+
+	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+	PREFIX dbp: <http://dbpedia.org/ontology/>
+	SELECT ?city, ?areaTotal WHERE {
+	?city rdf:type <http://dbpedia.org/class/yago/CitiesInTexas> ;
+	dbp:areaTotal ?areaTotal, ?areaTotaltwo .
+	FILTER (?areaTotal < ?areaTotaltwo)
+	}
+
+QUERY 3:
+
+	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+	PREFIX dbp: <http://dbpedia.org/ontology/>
+	SELECT ?city, ?areaTotal, ?postalCode WHERE {
+	?city rdf:type <http://dbpedia.org/class/yago/CitiesInTexas> ;
+	dbp:areaTotal ?areaTotal, ?areaTotaltwo ;
+	dbp:postalCode ?postalCode.
+	FILTER (?areaTotal < ?areaTotaltwo)
+	}
+
+QUERY 4:
+
+	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+	PREFIX dbp: <http://dbpedia.org/ontology/>
+	SELECT ?city, ?areaTotal, ?postalCode WHERE {
+	?city rdf:type <http://dbpedia.org/class/yago/CitiesInTexas> ;
+	dbp:areaTotal ?areaTotal, ?areaTotaltwo ;
+	dbp:postalCode ?postalCode.
+	FILTER (?areaTotal < ?areaTotaltwo)
+	}
+	ORDER BY desc(?areaTotal)
+	LIMIT 10
+	OFFSET 10
+
+QUERY 5:
+
+	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+	PREFIX dbp: <http://dbpedia.org/ontology/>
+	SELECT ?city, ?areaTotal, ?postalCode WHERE {
+	?city rdf:type <http://dbpedia.org/class/yago/CitiesInTexas> ;
+	dbp:areaTotal ?areaTotal, ?areaTotaltwo ;
+	dbp:postalCode ?postalCode.
+	FILTER (?areaTotal < ?areaTotaltwo)
+	FILTER (?areaTotal > 300000000)
+	}
+	ORDER BY desc(?areaTotal)
